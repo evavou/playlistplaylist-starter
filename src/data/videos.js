@@ -14,6 +14,48 @@ const videos = [
     url: 'https://www.youtube.com/watch?v=JJis0sld2cM',
     tags: ['jazz', 'étude']
   },
+  {
+    id: '4',
+    title: 'Nom de ta vidéo 2',
+    thumbnail: 'https://img.youtube.com/vi/JJis0sld2cM/hqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=JJis0sld2cM',
+    tags: ['jazz', 'étude']
+  },
+  {
+    id: 'seds',
+    title: 'Nom de ta vidéo 2',
+    thumbnail: 'https://img.youtube.com/vi/JJis0sld2cM/hqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=JJis0sld2cM',
+    tags: ['jazz', 'étude']
+  },
+  {
+    id: 'sefs',
+    title: 'Nom de ta vidéo 2',
+    thumbnail: 'https://img.youtube.com/vi/JJis0sld2cM/hqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=JJis0sld2cM',
+    tags: ['jazz', 'étude']
+  },
+  {
+    id: 'sefee',
+    title: 'Nom de ta vidéo 2',
+    thumbnail: 'https://img.youtube.com/vi/JJis0sld2cM/hqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=JJis0sld2cM',
+    tags: ['jazz', 'étude']
+  },
+  {
+    id: 'sefzc',
+    title: 'Nom de ta vidéo 2',
+    thumbnail: 'https://img.youtube.com/vi/JJis0sld2cM/hqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=JJis0sld2cM',
+    tags: ['jazz', 'étude']
+  },
+  {
+    id: 'sdvs',
+    title: 'Nom de ta vidéo 2',
+    thumbnail: 'https://img.youtube.com/vi/JJis0sld2cM/hqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=JJis0sld2cM',
+    tags: ['jazz', 'étude']
+  },
 ];
 
 export default videos;

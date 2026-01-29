@@ -16,7 +16,8 @@ body {
 .card:hover {
   transform: translateY(-20px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 1) !important;
-  border: 5px solid #ff0000;
+
+  outline: 10px solid rgba(255, 0, 0, 0.8);
 }
 
 .badge {
