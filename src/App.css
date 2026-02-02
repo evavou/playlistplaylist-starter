@@ -1,26 +1,106 @@
 /* src/App.css */
+
 body {
-  background: linear-gradient(135deg, #ff0000, #ef00db, #5500df);
+  background: #0e0e0e;
   min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color:rgb(255, 255, 255)
 }
+
 
 
 .card {
-  transition: all 0.3s ease;
-  border: 1px solid #000000;
+  transition: all .2s ease-out;
 }
 
 .card:hover {
-  transform: translateY(-20px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 1) !important;
-
-  outline: 10px solid rgba(255, 0, 0, 0.8);
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 0 100px color-mix(in srgb, var(--selected-tag-color ) 80%, transparent) !important;
+  outline: 10px solid var(--selected-tag-color) !important ; 
 }
 
+
+.video-title {
+  position: absolute;
+  bottom: 32px;
+  left: 10px;
+  right: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+  pointer-events: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.lead-custom {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600; /* Light */
+  letter-spacing: 0.5px;
+  color: #ffffff; /* Gris foncé élégant */
+}
+
+.badge-container {
+  white-space: nowrap;
+  display: flex;
+  gap : 0.2rem !important;
+}
+
+
 .badge {
-  font-weight: 800;
-  padding: 0.4em 0.8em;
+  display: inline-block;  
+  margin-right: 0;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 0.9em;
+  padding: 0.2em 0.6em;
+  white-space: nowrap; /* pas de retour a la ligne */
+  color: rgb(255, 255, 255);
+  background-color: rgb(27, 27, 27);
+  transition: all 0.1s ease;
+  user-select: none;
+}
+
+
+.badge:hover {
+  transform: scale(1.05);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+/* Style par défaut (non sélectionné) */
+.tag-button {
+  border-width: 0px;
+  font-weight: 400;
+  transform: scale(1);
+  transition: all 0.1s ease-in;
+  opacity: 0.9;
+  font-family: monospace;
+  height: 38px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* Style quand sélectionné */
+.tag-button.selected {
+  font-weight: 900;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.tag-button:hover {
+  transform: scale(1.1);
 }

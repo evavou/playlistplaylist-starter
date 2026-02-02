@@ -1,8 +1,8 @@
 // src/components/VideoGrid.jsx
 import React, { useState, useEffect, useRef } from 'react';
-import VideoCard from './VideoCard';
+import Cards from './Cards';
 
-const VideoGrid = ({ videos, cardWidth = 200, minGap = 20, maxCardsPerRow = 10 }) => {
+const CardsGrid = ({ videos, cardWidth, minGap, maxCardsPerRow, selectedTagColor, onTagClick }) => {
   const containerRef = useRef(null);
   const [containerWidth, setContainerWidth] = useState(0);
   const [columns, setColumns] = useState(1);
@@ -66,10 +66,14 @@ const VideoGrid = ({ videos, cardWidth = 200, minGap = 20, maxCardsPerRow = 10 }
       }}
     >
       {videos.map(video => (
-        <VideoCard key={video.id} video={video} />
+        <Cards 
+          key={video.id} 
+          video={video}
+          selectedTagColor={selectedTagColor}
+          onTagClick={onTagClick} />
       ))}
     </div>
   );
 };
 
-export default VideoGrid;
+export default CardsGrid;
